@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChicCraft - Product Information</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-main-col">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/ChicCraft.png" alt="ChicCraft logo" width="80" height="70">
+        </a>
+
+        <!--- PUT NAV BAR -->
+        <nav class="desktop-navigation-menu">
+
+          <div class="container">
+
+            <ul class="desktop-menu-category-list">
+
+              <li class="menu-category">
+                <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/index.html"
+                 class="menu-title">Home</a>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">About Us</a>
+              </li>
+
+              <li class="menu-category">
+                <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/contacts.html#"
+                 class="menu-title">Contacts</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <!--- PUT SEARCH BAR -->
+
+
+          <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/addCart.html"
+           class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+        </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/index.html"
+           class="menu-title">Home</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!--
+    - MAIN
+  -->
+  <main>
+
+    <!--
+            - PRODUCT FEATURED
+          -->
+          <div class="breadcrumb">
+            <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/index.html">
+              Back</a> | <span><strong>Product Information</strong></span>
+        </div>
+
+          <div class="product-featured">
+            <div class="showcase-container">
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img id="product-image" src="./assets/images/products/default.png" alt="Product Image" class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <h3 id="product-title" class="showcase-title">Product Name</h3>
+                  <div class="price-box">
+                    <p id="product-price" class="price">$0.00</p>
+                    <del id="product-old-price">$0.00</del>
+                  </div>
+                  <p id="product-description" class="showcase-desc">Product description...</p>
+                  <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!--
+            - RECOMMENDED PRODUCTS
+          -->
+
+    <div class="recommended-products-wrapper">
+      <h2 class="recommended-title">Recommended Products</h2>
+      <section class="recommended-products">
+        <div class="product-card">
+          <img src="./assets/images/products/white 1.png" alt="Recommended Chair" class="showcase-img">
+          <h3 class="recommended-prod-description">Moelleri Chair</h3>
+          <p>$120.00</p>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/products/YELLOW.png" alt="Recommended Chair" class="showcase-img">
+          <h3 class="recommended-prod-description">Lemon Chair</h3>
+          <p>$50</p>
+        </div>
+        <div class="product-card">
+          <img src="./assets/images/products/heart chair.png" alt="Recommended Chair" class="showcase-img">
+          <h3 class="recommended-prod-description">Heart Shape Chair</h3>
+          <p>$20.00</p>
+        </div>
+      </section>
+    </div>
+
+
+  </main>
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/about.html"
+             class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">ChicCraft</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- Custom JS -->
+  <script>
+    const products = {
+      '1': {
+        image: './assets/images/products/H1.png',
+        title: 'Hanging Lights',
+        price: '$45.00',
+        oldPrice: '$60.00',
+        description: 'Crafted from wrought iron, this geometric cage light adds a touch of industrial chic to any space. The open cage design features a diamond shape, allowing for ample light to pass through. The matte black finish complements a variety of décor styles. This pendant light is ideal for hanging over a kitchen island, breakfast nook, or bar area.'
+      },
+      // Add more products as needed
+      '2': {
+        image: './assets/images/products/white 3.png',
+        title: 'Minimalist Chair',
+        price: '$55.00',
+        oldPrice: '$70.00',
+        description: "The chair in the image is a replica of the Daw Eames molded plastic armchair, instantly recognizable by its organic silhouette and utilitarian design.  The seat is upholstered in a crisp, white shell, a color that conveys a sense of clean, modern elegance.  This light and airy aesthetic is balanced by the warmth of the tapered, beechwood legs, stained in a rich, medium tone that brings a touch of nature's beauty indoors."
+      },
+      '3': {
+        image: './assets/images/products/b1.png',
+        title: 'Reminiscent Sculptural Chair',
+        price: '$50.00',
+        oldPrice: '$55.00',
+        description: "The seat is upholstered in a luxurious, velvety fabric that feels as sumptuous as it looks. The backrest is a canvas of contrasting colors, seamlessly blending tones like a masterpiece painted with the palette of nature. The chair's frame is a sturdy yet elegant amalgamation of sleek metallic curves, expertly coated in a lustrous finish that complements the vivid upholstery."
+      },
+    };
+
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const productId = getQueryParam('id');
+      if (products[productId]) {
+        const product = products[productId];
+        document.getElementById('product-image').src = product.image;
+        document.getElementById('product-title').innerText = product.title;
+        document.getElementById('product-price').innerText = product.price;
+        document.getElementById('product-old-price').innerText = product.oldPrice;
+        document.getElementById('product-description').innerText = product.description;
+      }
+    });
+
+    function addToCart() {
+      const productId = getQueryParam('id');
+      if (products[productId]) {
+        const product = products[productId];
+        const cartItem = {
+          id: productId,
+          image: product.image,
+          title: product.title,
+          price: product.price,
+          quantity: 1
+        };
+        
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(cartItem);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Product added to cart!');
+      }
+    }
+  </script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

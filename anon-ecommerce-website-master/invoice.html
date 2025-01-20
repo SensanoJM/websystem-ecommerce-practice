@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicCraft - Invoice</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="overlay" data-overlay></div>
+
+    <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-main-col">
+
+        <div class="container">
+
+            <a href="#" class="header-logo">
+                <img src="./assets/images/logo/ChicCraft.png" alt="ChicCraft logo" width="80" height="70">
+            </a>
+
+            <!--- PUT NAV BAR -->
+            <nav class="desktop-navigation-menu">
+
+                <div class="container">
+
+                    <ul class="desktop-menu-category-list">
+
+                        <li class="menu-category">
+                            <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/index.html"
+                             class="menu-title">Home</a>
+                          </li>
+
+                        <li class="menu-category">
+                            <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/about.html"
+                             class="menu-title">About Us</a>
+                        </li>
+
+                        <li class="menu-category">
+                            <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/contacts.html#"
+                             class="menu-title">Contacts</a>
+                          </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="header-user-actions">
+
+                <button class="action-btn">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
+
+                <!--- PUT SEARCH BAR -->
+
+                <a href="http://127.0.0.1:5500/anon-ecommerce-website-master%20(2)/anon-ecommerce-website-master/anon-ecommerce-website-master/addCart.html"
+                class="action-btn">
+                 <ion-icon name="bag-handle-outline"></ion-icon>
+             </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-bottom-navigation">
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+
+            <span class="count">0</span>
+        </button>
+
+        <button class="action-btn">
+            <ion-icon name="home-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <span class="count">0</span>
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="grid-outline"></ion-icon>
+        </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+        <div class="menu-top">
+            <h2 class="menu-title">Menu</h2>
+
+            <button class="menu-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
+
+            <li class="menu-category">
+                <a href="#" class="menu-title">Home</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <!--
+    - MAIN
+  -->
+  <main class="invoice-body">
+    <div class="invoice-container">
+      <div class="invoice-header">
+        <h1>Thank you for ordering!</h1>
+        <span class="date-time" id="order-date">9:16 | 09.02.2024</span>
+      </div>
+
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="invoice-items">
+          <!-- Items will be injected here -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total Price</td>
+            <td id="total-price">$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="delivery-info">
+        <div class="info-section">
+          <span class="info-title">Delivery Address</span>
+          <span class="info-details" id="delivery-address"></span>
+        </div>
+        <div class="info-section">
+          <span class="info-title">Date of Delivery</span>
+          <span class="info-details" id="delivery-date"></span>
+        </div>
+        <div class="info-section">
+          <span class="info-title">Payment Information</span>
+          <span class="info-details" id="payment-info"></span>
+        </div>
+        <div class="info-section">
+          <span class="info-title">Customer Details</span>
+          <span class="info-details" id="customer-details"></span>
+        </div>
+      </div>
+      <div class="footer-invoice">
+        <p class="info-inquiry">If you have any questions, please contact customer support on the website: <a href="#">ChicCraft</a></p>
+      </div>
+      <div class="go-back">
+        <a href="index.html" class="go-back-btn">Go to Home</a>
+      </div>
+    </div>
+  </main>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const orderDetails = JSON.parse(localStorage.getItem('orderDetails')) || {};
+    
+          const invoiceItemsContainer = document.getElementById('invoice-items');
+          const orderDateElement = document.getElementById('order-date');
+          const totalPriceElement = document.getElementById('total-price');
+          const deliveryAddressElement = document.getElementById('delivery-address');
+          const deliveryDateElement = document.getElementById('delivery-date');
+          const paymentInfoElement = document.getElementById('payment-info');
+          const customerDetailsElement = document.getElementById('customer-details');
+    
+          orderDateElement.innerText = orderDetails.orderDate;
+    
+          let totalPrice = 0;
+    
+          orderDetails.cart.forEach(item => {
+            const invoiceItem = document.createElement('tr');
+            invoiceItem.innerHTML = `
+              <td>${item.title}</td>
+              <td>${item.quantity}</td>
+              <td>$${parseFloat(item.price.replace('$', '')).toFixed(2)}</td>
+            `;
+            invoiceItemsContainer.appendChild(invoiceItem);
+            totalPrice += parseFloat(item.price.replace('$', '')) * item.quantity;
+          });
+    
+          totalPriceElement.innerText = `$${totalPrice.toFixed(2)}`;
+          deliveryAddressElement.innerText = `${orderDetails.shippingInfo.streetAddress}, ${orderDetails.shippingInfo.city}, ${orderDetails.shippingInfo.country}, ${orderDetails.shippingInfo.zipCode}`;
+          deliveryDateElement.innerText = orderDetails.deliveryDate;
+          paymentInfoElement.innerText = `Method: ${orderDetails.shippingInfo.paymentMethod}`;
+          customerDetailsElement.innerHTML = `Phone Number: ${orderDetails.shippingInfo.contactNumber}<br>Customer ID: ${orderDetails.customerID}`;
+        });
+      </script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

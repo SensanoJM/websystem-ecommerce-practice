@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e4e4e4;
+    color: #000000;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.mission-section, .vision-section, .values-section {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}
+
+.mission-section {
+    background-image: url('modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background-scaled.jpg');
+}
+
+.vision-section {
+    background-image: url('beautiful-pink-living-room.jpg');
+}
+
+.values-section {
+    background-image: url('modern-sofa-design-wallpaper-preview.jpg');
+}
+
+.section {
+    flex: 1 1 100%; /* Ensure each section takes full width */
+}
+
+.section .content {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 50%; /* Adjust width of content area */
+}
+
+.label {
+    color: #fff; /* White font color */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.description {
+    color: #fff; /* White font color */
+    font-size: 18px; /* Adjust font size as needed */
+    max-width: 600px; /* Set the maximum width */
+    margin: 0 auto; /* Center the description */
+    text-align: justify; /* Justify the text */
+}
+
+.section h2 {
+    color: #007bff;
+}
+
+.section p {
+    margin-top: 20px;
+}

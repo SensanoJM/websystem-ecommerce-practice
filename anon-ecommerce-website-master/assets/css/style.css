@@ -968,7 +968,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 /*-----------------------------------*\
   #PRODUCT MINIMAL
 \*-----------------------------------*/
-
 .product-minimal { margin-bottom: 30px; }
 
 .product-minimal .product-showcase { margin-bottom: 10px; }
@@ -996,6 +995,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 15px;
   border-radius: var(--border-radius-md);
 }
+
 
 .product-minimal .showcase:not(:last-child) { margin-bottom: 15px; }
 
@@ -2415,6 +2415,8 @@ footer {
     width: calc(33.33% - 14px);
     flex-grow: 1;
   }
+
+  
 
   .product-minimal .showcase-wrapper { gap: 10px; }
 
